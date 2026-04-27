@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asiam — Voyagez en Asie à chaque bouchée</title>
+  <meta name="description" content="Asiam — Restaurant asiatique élégant. Sushi, nouilles, riz et plats au poulet. Réservez votre table ou commandez en ligne." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <img src="public/images/logo.jpg" alt="Asiam" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#why">À propos</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#reviews">Avis</a>
+        <a href="#location">Contact</a>
+        <a href="#cta" class="btn btn-gold btn-sm">Réserver</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow" data-aos="fade-down">家 • Bienvenue chez Asiam</p>
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        Voyagez en Asie<br/><span class="accent">à chaque bouchée</span>
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="250">
+        Une cuisine raffinée, des saveurs authentiques et une ambiance feutrée
+        — l’Asie réinventée au cœur de votre ville.
+      </p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+        <a href="#cta" class="btn btn-gold js-reserve">
+          <i class="fa-solid fa-utensils"></i> Réserver une table
+        </a>
+        <a href="#menu" class="btn btn-outline">
+          <i class="fa-solid fa-bag-shopping"></i> Commander
+        </a>
+      </div>
+    </div>
+    <a href="#menu" class="scroll-cue" aria-label="Faire défiler"><span></span></a>
+  </section>
+
+  <!-- FEATURED MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Notre carte</p>
+        <h2>Sélection du chef</h2>
+        <p class="section-sub">Des plats signatures préparés avec des produits frais et une passion sans frontière.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-aos="fade-up">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="menu-body">
+            <div class="menu-top"><h3>Sushi</h3><span class="price">18€</span></div>
+            <p>Assortiment de sushis raffinés, poisson cru d’exception et riz vinaigré à la japonaise.</p>
+            <a href="#cta" class="link-gold">Commander <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="menu-body">
+            <div class="menu-top"><h3>Nouilles</h3><span class="price">14€</span></div>
+            <p>Nouilles sautées au wok, légumes croquants, sauce maison soja-sésame et touche pimentée.</p>
+            <a href="#cta" class="link-gold">Commander <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="menu-body">
+            <div class="menu-top"><h3>Bols de riz</h3><span class="price">12€</span></div>
+            <p>Riz parfumé, légumes de saison et protéines marinées — un classique réconfortant et équilibré.</p>
+            <a href="#cta" class="link-gold">Commander <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80')"></div>
+          <div class="menu-body">
+            <div class="menu-top"><h3>Poulet asiatique</h3><span class="price">16€</span></div>
+            <p>Poulet caramélisé, gingembre frais et oignons verts — fondant à l’intérieur, croustillant dehors.</p>
+            <a href="#cta" class="link-gold">Commander <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" class="section section-dark">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Pourquoi Asiam</p>
+        <h2>L’excellence, en toute simplicité</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up">
+          <div class="why-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Ingrédients frais</h3>
+          <p>Sélection rigoureuse de produits du marché, livrés chaque matin par nos partenaires de confiance.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Chef expérimenté</h3>
+          <p>Plus de 20 ans d’expertise au service d’une cuisine asiatique authentique et créative.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Service rapide</h3>
+          <p>Une équipe attentive et efficace, pour une expérience fluide sur place comme à emporter.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon"><i class="fa-solid fa-moon"></i></div>
+          <h3>Ambiance unique</h3>
+          <p>Un décor élégant aux inspirations asiatiques, propice à la détente et aux beaux moments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Galerie</p>
+        <h2>L’univers Asiam</h2>
+      </div>
+      <div class="gallery-grid gallery-4">
+        <div class="gallery-item featured" data-aos="zoom-in" style="background-image:url('public/images/1.jpeg')"></div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" style="background-image:url('public/images/2.jpg')"></div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" style="background-image:url('public/images/3.jpg')"></div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" style="background-image:url('public/images/4.jpg')"></div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" style="background-image:url('public/images/5.jpg')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section section-dark">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="eyebrow">Témoignages</p>
+        <h2>Ce qu’ils en disent</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card" data-aos="fade-up">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>« Une expérience culinaire incroyable. Les sushis sont d’une fraîcheur exceptionnelle et le service est aux petits soins. »</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=47" alt="" />
+            <div><strong>Camille L.</strong><span>Cliente fidèle</span></div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>« Le meilleur restaurant asiatique de la ville. L’ambiance est magnifique et chaque plat est une œuvre d’art. »</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=12" alt="" />
+            <div><strong>Maxime R.</strong><span>Food lover</span></div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>« Le poulet caramélisé est à tomber et l’accueil est chaleureux. On y retourne sans hésiter ! »</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=32" alt="" />
+            <div><strong>Sofia D.</strong><span>Blogueuse</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location" class="section">
+    <div class="container location-grid">
+      <div data-aos="fade-right">
+        <p class="eyebrow">Nous trouver</p>
+        <h2>Venez nous rendre visite</h2>
+        <p class="section-sub" style="text-align:left">Plongez dans une atmosphère feutrée et laissez-vous guider par nos saveurs.</p>
+        <ul class="info-list">
+          <li><i class="fa-solid fa-location-dot"></i> X43G+H6R, Av. Al Araar, Rabat 10000</li>
+          <li><i class="fa-solid fa-phone"></i> 05 37 56 56 30</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@asiam.fr</li>
+          <li><i class="fa-solid fa-clock"></i> Lun – Dim · 12h00 – 23h30</li>
+        </ul>
+        <div class="hero-buttons" style="margin-top:1.5rem;justify-content:flex-start">
+          <a href="#cta" class="btn btn-gold js-reserve"><i class="fa-solid fa-calendar-check"></i> Réserver</a>
+          <a href="tel:+212537565630" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Appeler</a>
+        </div>
+      </div>
+
+      <div class="map-wrap" data-aos="fade-left">
+        <iframe
+          src="https://www.google.com/maps?q=X43G%2BH6R+Av.+Al+Araar+Rabat+10000&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta">
+    <div class="cta-overlay"></div>
+    <div class="container cta-inner" data-aos="zoom-in">
+      <p class="eyebrow">Prêt à voyager ?</p>
+      <h2>Une table vous attend chez <span class="accent">Asiam</span></h2>
+      <p class="section-sub">Réservez dès maintenant ou commandez en ligne — l’Asie s’invite à votre table.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-gold js-reserve"><i class="fa-solid fa-calendar-check"></i> Réserver maintenant</a>
+        <a href="#" class="btn btn-outline"><i class="fa-solid fa-bag-shopping"></i> Commander en ligne</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#hero" class="logo"><img src="public/images/logo.jpg" alt="Asiam" class="logo-img" /></a>
+        <p class="muted" style="margin-top:1rem">Voyagez en Asie à chaque bouchée. Une cuisine d’exception, à Rabat.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="#menu">Menu</a>
+        <a href="#why">À propos</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#reviews">Avis</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">X43G+H6R, Av. Al Araar<br/>Rabat 10000, Maroc</p>
+        <p class="muted">05 37 56 56 30</p>
+      </div>
+      <div>
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Asiam. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal" id="reserveModal" aria-hidden="true" role="dialog" aria-labelledby="reserveTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" data-close aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+      <p class="eyebrow" style="margin-bottom:.5rem">Réservation</p>
+      <h3 id="reserveTitle" class="modal-title">Réservez votre table</h3>
+      <p class="muted modal-sub">Remplissez le formulaire — nous confirmerons via WhatsApp.</p>
+
+      <form id="reserveForm" class="reserve-form" novalidate>
+        <div class="field">
+          <label for="rf-name">Nom complet</label>
+          <input id="rf-name" name="name" type="text" placeholder="Votre nom" required />
+        </div>
+        <div class="field">
+          <label for="rf-phone">Téléphone</label>
+          <input id="rf-phone" name="phone" type="tel" placeholder="+212 ..." required />
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="rf-date">Date</label>
+            <input id="rf-date" name="date" type="date" required />
+          </div>
+          <div class="field">
+            <label for="rf-time">Heure</label>
+            <input id="rf-time" name="time" type="time" required />
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="rf-persons">Nombre de personnes</label>
+            <input id="rf-persons" name="persons" type="number" min="1" max="20" placeholder="2" required />
+          </div>
+          <div class="field">
+            <label for="rf-seating">Préférence</label>
+            <select id="rf-seating" name="seating" required>
+              <option value="">Choisir...</option>
+              <option value="Intérieur">Intérieur</option>
+              <option value="Extérieur">Extérieur</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="form-error" id="rf-error" hidden></p>
+
+        <button type="submit" class="btn btn-gold btn-block" id="rf-submit">
+          <span class="btn-label"><i class="fa-brands fa-whatsapp"></i> Confirmer la réservation</span>
+          <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Envoi...</span>
+        </button>
+
+        <p class="form-success" id="rf-success" hidden>
+          <i class="fa-solid fa-circle-check"></i> Redirection vers WhatsApp...
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/212629019075" target="_blank" rel="noopener" class="wa-float" aria-label="Contacter sur WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
