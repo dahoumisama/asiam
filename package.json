@@ -1,0 +1,13 @@
+{
+  "name": "mm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website deployed on Vercel",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo \"No build step required for static site\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
